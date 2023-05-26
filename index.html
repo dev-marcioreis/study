@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========Autor========-->
+    <meta name="author" contente="Marcio Reis">
+    <meta name="description" contente="Projeto do desenvolvedor front-end Marcio Reis">
+    <meta name="keywords"
+    contente="HTML, CSS, SASS, Tailwind, Styled Components, JavaScript, TypeScript, React, Git, GitHub, Jest, Testing Library, SEO, Regex, Acessibilidade web, Scrum, Dev, Desenvolvedor, Front-end">
+    <!--========Icon========-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<!--========CSS========-->
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!--========Favicon========-->
+	
+	<!--========JavaScript========-->
+	<script src="assets/js/main.js" defer></script>
+	<title>Study</title>
+</head>
+
+<body>
+	
+	<!--========Header========-->
+	<header class="header">
+		<nav class="container navbar">
+			<div class="navbar__logo">
+				<a href="index.html" class="logo">
+					<span>study</span>
+				</a>
+			</div>
+			<ul class="navbar__list">
+				<li class="navbar__item">
+					<a href="#top" class="navbar__link">
+						<span class="navbar__icon"><i class="uil uil-estate"></i></span>
+						<span class="navbar__name">início</span>
+					</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#about" class="navbar__link">
+						<span class="navbar__icon"><i class="uil uil-folder-info"></i></span>
+						<span class="navbar__name">sobre</span>
+					</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#methodology" class="navbar__link">
+						<span class="navbar__icon"><i class="uil uil-laptop-cloud"></i></span>
+						<span class="navbar__name">método</span>
+					</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#plus" class="navbar__link">
+						<span class="navbar__icon"><i class="uil uil-create-dashboard"></i></span>
+						<span class="navbar__name">plus</span>
+					</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#cases" class="navbar__link">
+						<span class="navbar__icon"><i class="uil uil-bag"></i></span>
+						<span class="navbar__name">cases</span>
+					</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#bonus" class="navbar__link">
+						<span class="navbar__icon"><i class="uil uil-plus"></i></span>
+						<span class="navbar__name">bônus</span>
+					</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#plans" class="navbar__link">
+						<span class="navbar__icon"><i class="uil uil-calender"></i></span>
+						<span class="navbar__name">planos</span>
+					</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#contact" class="navbar__link">
+						<span class="navbar__icon"><i class="uil uil-at"></i></span>
+						<span class="navbar__name">contato</span>
+					</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link" id="openRegisterBtn">
+						<span class="navbar__icon login"><i class="uil uil-user"></i></span>
+						<span class="navbar__name">entrar</span>
+					</a>
+				</li>
+				<div class="toggle__btns">
+					<span class="close"><i class="uil uil-angle-right"></i></span>
+					<span class="open"><i class="uil uil-angle-left"></i></span>
+				</div>
+			</ul>
+		</nav>
+	</header>
+
+	<!--========Register========-->
+	<aside class="register" id="registerMenu">
+        <i class="uil uil-times" id="closeRegisterBtn"></i>
+        <div class="register__image-box">
+			<img src="assets/images/register.png" alt="Register image">
+		</div>
+		<div class="register__container-box forms">
+			<div class="form login">
+				<div class="form__content">
+					<h2 class="form__title"><i class="uil uil-user"></i> <span>Entrar</span></h2>
+					<form action="">
+						<div class="field input__field">
+							<input type="email" placeholder="E-mail" class="input">
+						</div>
+						<div class="field input__field">
+							<input type="password" placeholder="Senha" class="password">
+						</div>
+						<div class="form__link">
+							<a href="#" class="forgot__password">Esqueceu a senha?</a>
+						</div>
+						<div class="field button__field">
+							<button>entrar</button>
+						</div>
+					</form>
+					<div class="form__link">
+						<span>Tem uma conta? <a href="#" class="link signup__link">Cadastre-se</a></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="form signup">
+				<div class="form__content">
+					<h2 class="form__title"><i class="uil uil-edit"></i> <span>Cadastre-se</span></h2>
+					<h4>Entre em nossa fila de espera</h4>
+					<p>Seja um dos primeiros a se registrar em nossa lista de espera e ganhe 7 dias para alavancar sua carreira como <strong>front-end</strong>.</p>
+					<form action="">
+						<div class="field input__field">
+							<input type="text" placeholder="Nome" class="input">
+						</div>
+						<div class="field input__field">
+							<input type="email" placeholder="E-mail" class="email">
+						</div>
+						<div class="field input__field">
+							<input type="tel" placeholder="Celular" class="cel">
+						</div>
+						<div class="field button__field">
+							<button>cadastre-se</button>
+						</div>
+					</form>
+					<div class="form__link">
+						<span>Tem uma conta? <a href="#" class="link login__link">Entrar</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+    </aside>
+
+	<!--========Main========-->
+	<main class="main">
+		<div class="container">
+
+			<!--========Home========-->
+			<section class="section home" id="top">
+				<div class="home__container">
+					<div class="home__content">
+						<div class="image__container">
+							<img src="assets/images/home.jpg" alt="Home Image">
+						</div>
+						<div class="text__container">
+							<h1>study
+								<h2>Faça parte da maior comunidade de aprendizagem
+									<h3>online</h3>
+								</h2>
+							</h1>
+							<p>Um mapa completo para sua evolução e ter acesso as melhores oportunidades e possibilidades em sua carreira como dev front-end.</p>
+							<a  href="#about" class="home__btn">
+								<span>Saiba mais</span>
+								<i class="uil uil-arrow-down"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--========Home========-->
+			<section class="section about" id="about">
+				<div class="about__container">
+					<h1>Sobre</h1>
+				</div>
+			</section>
+
+			<!--========Metodo========-->
+			<section class="section metodo" id="methodology">
+				<div class="metodo__container">
+					<h1>Metodologia</h1>
+				</div>
+			</section>
+
+			<!--========Plus========-->
+			<section class="section plus" id="plus">
+				<div class="plus__container">
+					<h1>Plus</h1>
+				</div>
+			</section>
+
+			<!--========Cases========-->
+			<section class="section cases" id="cases">
+				<div class="cases__container">
+					<h1>Cases</h1>
+				</div>
+			</section>
+
+			<!--========Bonus========-->
+			<section class="section bonus" id="bonus">
+				<div class="bonus__container">
+					<h1>Bônus</h1>
+				</div>
+			</section>
+
+			<!--========Plans========-->
+			<section class="section plans" id="plans">
+				<div class="plans__container">
+					<h1>Planos</h1>
+				</div>
+			</section>
+
+			<!--========Contact========-->
+			<section class="section contact" id="contact">
+				<div class="contact__container">
+					<h1>Fale Conosco</h1>
+				</div>
+			</section>
+
+		</div>
+	</main>
+
+	<!--========Footer========-->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__container">
+
+			</div>
+		</div>
+	</footer>
+
+	<!--========Copy========-->
+	<div class="copy">
+		<div class="container">
+			<div class="copy__container">
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
