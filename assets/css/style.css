@@ -63,6 +63,7 @@ body {
   color: var(--color-text);
   line-height: var(--line-height);
   font-size: var(--font-size);
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   width: .5rem;
@@ -105,9 +106,31 @@ img {
   display: block;
 }
 
+.btn {
+  width: 14rem;
+  height: 2.5rem;
+  background: var(--color-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+.btn span {
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.btn i {
+  color: var(--color-black);
+}
+
 
 /*==========Média Query Tablet==========*/
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .container{
       width: var(--container-md);
   }
@@ -377,36 +400,74 @@ img {
 .text__container p {
   margin-block-end: 1rem;
 }
-.home__btn {
-  width: 8rem;
-  height: 2.5rem;
-  background: var(--color-yellow);
+
+/*==========About==========*/ 
+.about {
+  min-height: 100vh;
+  margin-block-start: 15rem;
+}
+.about__container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: var(--transition);
+  justify-content: space-between;
+  background-image: url('../images/about-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.home__btn:hover {
-  transform: scale(1.05);
+.about__text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 1rem;
 }
-.home__btn span {
-  color: var(--color-black);
+.about__text h2 {
+  font-size: 3.2rem;
+  line-height: 1;
+  color: var(--color-white);
+  font-weight: 100;
+  margin-block-end: 1.5rem;
+}
+.about__text h2 span {
+  font-family: var(--font-title);
+  font-weight: 900;
+  color: var(--color-yellow);
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
-.home__btn i {
-  color: var(--color-black);
+.about__text p {
+  margin-block-end: 1.5rem;
 }
+.home__image {
+  padding: 0 1rem;
+}
+.home__image img {
+  width: 35vw;
+  filter: brightness(1.2) contrast(1.2);
+  transition: var(--transition);
+  animation: float 4s linear infinite;
+}
+
+/*==========Animation==========*/ 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2rem);
+  }
+}
+
 
 
 /*==========Sections==========*/ 
-.about, .metodo, .plus, .cases, .bonus, .plans, .contact {
+.metodo, .plus, .cases, .bonus, .plans, .contact {
   height: 100vh;
 }
 
+
+
 /*==========Media Query Tablet==========*/ 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
 
   /*==========Header==========*/ 
   .navbar__list {
@@ -439,6 +500,29 @@ img {
     height: 2.2rem;
   }
 
+  /*==========About==========*/ 
+  .about {
+    min-height: auto;
+    margin-block-start: 10rem;
+  }
+  .about__container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about__text {
+    padding: 0;
+  }
+  .about__text h2 {
+    font-size: 2rem;
+  }
+  .home__image {
+    margin-block-start: 4rem;
+    padding: 0;
+  }
+  .home__image img {
+    width: 70vw;
+  }
+
 }
 
 /*==========Media Query Mobile==========*/ 
@@ -465,6 +549,11 @@ img {
   }
   .home__btn {
     margin-block-end: 2rem;
+  }
+
+  /*==========About==========*/ 
+  .home__image img {
+    width: 90vw;
   }
 
 }
