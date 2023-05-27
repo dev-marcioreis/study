@@ -403,7 +403,6 @@ img {
 
 /*==========About==========*/ 
 .about {
-  min-height: 100vh;
   margin-block-start: 15rem;
 }
 .about__container {
@@ -457,12 +456,8 @@ img {
   }
 }
 
+/*==========Methodology==========*/ 
 
-
-/*==========Sections==========*/ 
-.metodo, .plus, .cases, .bonus, .plans, .contact {
-  height: 100vh;
-}
 
 
 
@@ -502,7 +497,6 @@ img {
 
   /*==========About==========*/ 
   .about {
-    min-height: auto;
     margin-block-start: 10rem;
   }
   .about__container {
