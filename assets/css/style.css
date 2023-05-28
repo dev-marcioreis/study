@@ -489,7 +489,7 @@ img {
   box-shadow: var(--shadow);
   text-align: center;
   padding: 1rem;
-  background: var(--color-yellow);
+  background: var(--color-dark);
   transition: var(--transition);
 }
 .methodology__box:hover {
@@ -511,13 +511,11 @@ img {
 }
 .methodology__box h4 {
   font-weight: 700;
-  color: var(--color-black);
+  color: var(--color-yellow);
   margin-block-start: 1rem;
   margin-block-end: .5rem;
 }
-.methodology__box p {
-  color: var(--color-black);
-}
+
 
 /*==========Plus==========*/
 .plus {
@@ -537,7 +535,7 @@ img {
   width: 10rem;
   height: 10rem;
   margin: 0 auto;
-  background: var(--color-yellow);
+  background: var(--color-dark);
   border-radius: .5rem;
   padding: 1rem;
   transform: rotate(-5deg);
@@ -567,6 +565,68 @@ img {
   color: var(--color-white);
   font-weight: 500;
 }
+
+/*==========Bonus==========*/
+.bonus {
+  text-align: center;
+  padding: 5rem 0;
+}
+.bonus__top h2 {
+  color: var(--color-white);
+  font-size: 3rem;
+  font-weight: 200;
+}
+.bonus__top h2 span {
+  color: var(--color-yellow);
+  font-weight: 900;
+}
+.bonus__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 1rem;
+  margin-block-start: 3rem;
+}
+.bonus__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 1rem;
+  background: var(--color-dark);
+  transition: var(--transition);
+}
+.bonus__box:hover {
+  background: var(--color-black);
+}
+.bonus__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--color-black);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+.bonus__box:hover .bonus__icon {
+  background: var(--color-dark);
+}
+.bonus__icon i {
+  background: var(--color-primary);
+  color: var(--color-yellow);
+  font-size: 1.2rem;
+  padding: .7rem 1rem;
+}
+.bonus__box h4 {
+  color: var(--color-yellow);
+  margin-block-end: .7rem;
+}
+
+
 
 
 /*==========Media Query Tablet==========*/ 
@@ -680,6 +740,27 @@ img {
   .plus__container {
     grid-template-columns: 1fr;
     gap: 5rem;
+  }
+
+  /*==========Bonus==========*/
+  .bonus {
+    padding: 1rem 0;
+    overflow-x: hidden;
+  }
+  .bonus__top h2 {
+    font-size: 2rem;
+  }
+  .bonus__content {
+    grid-template-columns: 1fr;
+  }
+  .bonus__box {
+    flex-direction: column;
+  }
+  .bonus__box:hover {
+    background: var(--color-dark);
+  }
+  .bonus__box:hover .bonus__icon {
+    background: var(--color-black);
   }
 
 }
